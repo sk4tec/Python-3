@@ -14,4 +14,4 @@ if x:
 
 
 if x == 1:␣␣ # ← ONE extra trailing space brakes it
-    print("Option 1")
+    print("Option 1") 
