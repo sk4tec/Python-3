@@ -8,12 +8,7 @@ contacts = {
     ]
 }
 
-emailAddresser = []
-
-for i in range(contacts['number']):
-    emailAddresser.append(contacts['students'][i]['email'])
-
 print("Email addresses of all students:")
 
-for email in emailAddresser:
-    print(email)
+for student in contacts['students']:
+    print(f"student email: {student['email']}.")
