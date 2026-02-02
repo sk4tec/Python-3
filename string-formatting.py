@@ -7,3 +7,5 @@ for x in expenses:
 
 print("You speent £", sum) # notice the extra space after the £
 print("You speent £", sum, sep='') # specify the separator as an empty string
+
+# could also do total = sum(expenses)

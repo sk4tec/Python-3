@@ -19,3 +19,14 @@ class HourlyEmployee(Employee):
 
     def calculate_paycheck(self):
         return self.hourly_wage * self.hours_worked
+    
+class ComissionEmployee(SalaryEmployee):
+    def __init__(self, fname, lname, salary, sales_amount, commission_rate):
+        super().__init__(fname, lname, salary)
+        self.sales_amount = sales_amount
+        self.commission_rate = commission_rate
+
+    def calculate_paycheck(self):
+        regular_salary = super().calculate_paycheck()
+        total_commission = self.sales_amount * self.commission_rate
+        return regular_salary + total_commission
