@@ -7,14 +7,21 @@ class Animal:
 
     def speak(self):
         return f"{self.name} makes a sound."
+    
+    def name_animal(self):
+        return self.name
 
 class Dog(Animal):
+    def __init__(self, name):
+        super().__init__(name)
+
     def speak(self):
         return f"{self.name} says Woof!"
     
 def main():
     dog = Dog("Buddy")
     
+    print(f"my name is {dog.name_animal()}")
     print(dog.speak())
     print(dog.sleep())
 
