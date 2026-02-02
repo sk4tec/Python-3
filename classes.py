@@ -6,7 +6,10 @@ class person:
     def greet(self):
         return f"Hello, my name is {self.name} and I am {self.age} years old."
 
-#main program
-# Creating an instance of the person class
-person = person("SunjBob", 30)
-print(person.greet())
+def main():
+    p = person("SunjBob", 30)
+    print(p.greet())
+
+
+if __name__ == "__main__":
+    main()
