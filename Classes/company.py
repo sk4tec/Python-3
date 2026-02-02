@@ -28,5 +28,5 @@ def main():
     for greeting in company.list_employees():
         print(greeting)
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # ensures this runs only when executed directly, not when imported
     main()
